@@ -48,6 +48,7 @@ function bullsAndCows(difficulty) {
         let randomMessage = messageArray[Math.floor(Math.random()*messageArray.length)]
         
         console.log(secretNumber)
+        
     
         let playerGuess = prompt('Guess a number: ');
         noOfAttempts++
@@ -90,6 +91,7 @@ function bullsAndCows(difficulty) {
                 }
     
                 if (bull === 0 && cow === 0) {
+                    randomMessage = messageArray[Math.floor(Math.random()*messageArray.length)]
                     console.log(randomMessage)
                     playerGuess = prompt('Guess a number: ');
                     noOfAttempts++
