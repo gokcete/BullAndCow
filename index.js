@@ -83,7 +83,7 @@ function bullsAndCows(difficulty) {
                     console.log(`Congratulations, ${playerName}, you won!`)
                     let nextGame = prompt('Do you want to play again? Y/N: ');
                     if(nextGame === 'Y') {
-                        bullsAndCows();
+                        bullsAndCows(difficulty);
                     } else {
     
                         break
@@ -116,7 +116,7 @@ function bullsAndCows(difficulty) {
             if(nextGame === 'Y') {
                 noOfGames++
                 console.log(`This is your ${noOfGames}. game`)
-                bullsAndCows();
+                bullsAndCows(difficulty);
             } 
         }
     }
